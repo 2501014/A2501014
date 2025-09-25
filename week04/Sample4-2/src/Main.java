@@ -5,18 +5,20 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args)
         Scanner keyborad =new Scanner(System.in);
-       int op1, op2;  //Data
-       int result1, result2; //정보
-       float result3; //정보
+        int op1, op2; //Data
+        int result1, result2;
+        float result3;
 
+        System.out.print("첫 번째 수를 입력(분자) :");
+        op1 = keyborad.nextInt();
+        System.out.print("두 번째 수를 입력(분모) :");
+        op2 = keyborad.nextInt();
 
-       System.out.print("첫 번째 수를 입력(분자):");
-       op
+        result1=op1/op2   //몫 (정수)
+        result2=op1%op2   //나머지
+        result3=(float)op1 /op2 //몫(실수)
 
-
-
-
-      result1=op1 /op2;   //몫(정수)
-      result2=op%op2;
-
-
+        System.out.printf("%d를 %%d로 나누면 몫=%d, 나머지=%d이다.\n",op1,op2,result1,result2);
+        System.out.printf("d를 d로 나누면 =%.1f이다.",op1,op2,result3);
+    }
+}
