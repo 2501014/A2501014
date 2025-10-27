@@ -4,15 +4,18 @@ import java.util.Scanner;
 // 에디터 여백에 있는 <icon src="AllIcons.Actions.Execute"/> 아이콘을 클릭하세요.
 public class Main {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
-        System.out.printf("나이 체중 신장을 분리하여 순서대로 입력하세요");
-        int age = sc.nextInt();
-        double weight = sc.nextDouble();
-        double height = sc.nextDouble();
+        System.out.print("첫번째 숫자를 입력하세요: ");
+        int num1 = scanner.nextInt();
 
-        System.out.printf("당신의 나이는 "+age+"살 입니다.");
-        System.out.printf("당신의 체중은 "+weight+"kg입니다.");
-        System.out.printf("당신의 신장은 "+height+"cm입니다.");
+        System.out.print("두번째 숫자를 입력하세요: ");
+        int num2 = scanner.nextInt();
+
+        int sum = num1+num2;
+
+        System.out.println(num1 + " + " +num2 + " = " + sum);
+
+        scanner.close();
     }
 }

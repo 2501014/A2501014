@@ -27,6 +27,6 @@ public class Main {
         System.out.println("모니터: "  + moni + "cm");
         System.out.println("cpu클럭: " + clk + "GHz");
         System.out.println("하드디스크: " +hdd + "GB");
-        System.out.println("기타: " + etc);
+        System.out.println("기타: " + "etc");
     }
 }
